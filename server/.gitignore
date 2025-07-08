@@ -1,0 +1,5 @@
+# Node modules (third-party packages)
+node_modules/
+
+# Environment variables (secrets)
+.env
