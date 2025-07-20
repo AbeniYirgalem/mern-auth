@@ -39,15 +39,16 @@ const Login = () => {
         });
         if (data.success) {
           setIsLoggedIn(true);
-          navigate("/");
           getUserData();
+          navigate("/");
+
           // toast.done(data.message);
         } else {
-          toast.error(data.message);
+          toast.error(error.message);
         }
       }
     } catch (error) {
-      toast.error(data.message);
+      toast.error(error.message);
     }
   };
 
