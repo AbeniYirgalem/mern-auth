@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { createContext } from "react";
-import { data } from "react-router-dom";
 import { toast } from "react-toastify";
 
 export const AppContext = createContext();
