@@ -56,10 +56,52 @@ This project is a MERN stack authentication system with user registration, login
    ```
 2. Set up a `.env` file with your MongoDB URI, JWT secret, and email credentials.
 3. Start the server:
+
    ```
    npm start
    ```
+
    or for development:
+
    ```
+
    npm run server
+   ```
+
+## Client
+
+The client is a React application built with Vite and Tailwind CSS. It provides the user interface for authentication and account management.
+
+### Structure
+
+- **src/App.jsx**: Main React app with routing.
+- **src/pages/**: Home, Login, EmailVerify, ResetPassword pages.
+- **src/components/**: Header, Navbar components.
+- **src/context/AppContext.jsx**: Global context for state management.
+- **public/**: Static assets.
+- **index.html**: Main HTML entry point.
+
+### Main Dependencies
+
+- react
+- react-dom
+- react-router-dom
+- axios
+- react-toastify
+- tailwindcss
+- vite
+
+### Getting Started
+
+1. Navigate to the `client` folder:
+   ```
+   cd client
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the client:
+   ```
+   npm run dev
    ```
