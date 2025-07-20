@@ -145,7 +145,14 @@ export const verifyEmail = async (req, res) => {
   }
 };
 
-
+    // Check if user is authenticated
+export const isAuthenticated = async (req, res) => {
+  try {
+    return res.json({ success: true });
+  } catch (error) {
+    res.json({ success: false, message: error.message });
+  }
+};
 
 // Send password reset OTP
 export const sendResetOtp = async (req, res) => {
